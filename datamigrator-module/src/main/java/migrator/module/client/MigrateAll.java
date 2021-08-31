@@ -6,7 +6,7 @@ import java.util.List;
 import migrator.core.sobject.MigrableObjectFactory;
 import migrator.core.utils.CommandVO;
 
-public class TestMain {
+public class MigrateAll {
 	public void process() {
 
 	   List<CommandVO> list = new ArrayList<CommandVO>();
@@ -42,16 +42,16 @@ public class TestMain {
 	   list.add(new CommandVO("create", "PMPlanTemplate.json"));
 	   list.add(new CommandVO("create", "PMPlan.json"));
 
-	   list1.add(new CommandVO("create", "Case.json"));
-	   list1.add(new CommandVO("create", "WorkOrder.json"));
-	   list1.add(new CommandVO("create", "PartsRequest.json"));
-	   list1.add(new CommandVO("create", "PartsOrder.json"));
+	   list.add(new CommandVO("create", "Case.json"));
+	   list.add(new CommandVO("create", "WorkOrder.json"));
+	   list.add(new CommandVO("create", "PartsRequest.json"));
+	   list.add(new CommandVO("create", "PartsOrder.json"));
 
 	   MigrableObjectFactory.migrate(list);
 	}
 
    	static public void main(String[] args) {
-   		TestMain migrate = new TestMain();
+   		MigrateAll migrate = new MigrateAll();
    		migrate.process();
 	}
 }
