@@ -1,0 +1,63 @@
+[
+    {
+      "parent": "SVMXC__Stock_Transfer__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+            "parentMappedField": "SVMXC__Stock_Transfer__c",
+            "childObject": "SVMXC__Stock_Transfer_Line__c",
+            "unmappedFields": [
+            
+            ],
+            "lookups": [
+                {
+                  "lookupMappedField": "SVMXC__SM_Batch_Lot2__c",
+                  "lookupObject": "SVMXC__SM_Batch_Lot__c",
+                  "keys": [
+                    "Name"
+                  ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Product__c",
+                    "lookupObject": "Product2",
+                    "keys": [
+                        "Name"
+                    ]
+                }
+            ]
+        }
+      ],
+      "lookups": [
+        {
+          "lookupMappedField": "SVMXC__Destination_Location__c",
+          "lookupObject": "SVMXC__Site__c",
+          "keys": [
+            "Name"
+          ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Source_Location__c",
+            "lookupObject": "SVMXC__Site__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Partner_Account__c",
+            "lookupObject": "Account",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Partner_Contact__c",
+            "lookupObject": "Contact",
+            "keys": [
+                "Name"
+            ]
+        }
+      ]
+    }
+  ]

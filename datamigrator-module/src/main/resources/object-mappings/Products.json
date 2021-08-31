@@ -1,5 +1,92 @@
 [
   {
-    "parent": "Product2"
+    "parent": "Product2",
+    "children": [
+      {
+        "parentMappedField": "SVMXC__Product__c",
+        "childObject": "SVMXC__Product_Stock__c",
+        "unmappedFields": [
+          
+        ],
+        "children": [
+          {
+            "parentMappedField": "SVMXC__Product_Stock__c",
+            "childObject": "SVMXC__Product_Serial__c",
+            "unmappedFields": [
+             
+            ]
+          },
+          {
+            "parentMappedField": "SVMXC__Product_Stock__c",
+            "childObject": "SVMXC__Allocated_Stock__c",
+            "unmappedFields": [
+             
+            ]
+          }
+  
+        ],
+        "lookups": [
+          {
+            "lookupMappedField": "SVMXC__Partner_Account__c",
+            "lookupObject": "Account",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+              "lookupMappedField": "SVMXC__Partner_Contact__c",
+              "lookupObject": "Contact",
+              "keys": [
+                "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Location__c",
+              "lookupObject": "SVMXC__Site__c",
+              "keys": [
+                "Name"
+              ]
+            }
+        ]
+      },
+      {
+        "parentMappedField": "SVMXC__Product__c",
+        "childObject": "SVMXC__Stock_Adjustment__c",
+        "unmappedFields": [
+         
+        ],
+        "lookups": [
+          {
+            "lookupMappedField": "SVMXC__Partner_Account__c",
+            "lookupObject": "Account",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+              "lookupMappedField": "SVMXC__Partner_Contact__c",
+              "lookupObject": "Contact",
+              "keys": [
+                "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Location__c",
+              "lookupObject": "SVMXC__Site__c",
+              "keys": [
+                "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__SM_Batch_Lot2__c",
+              "lookupObject": "SVMXC__SM_Batch_Lot__c",
+              "keys": [
+                "Name"
+              ]
+            }
+        ]
+      }
+
+    ]
   }
 ]

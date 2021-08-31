@@ -1,0 +1,209 @@
+[
+    {
+      "parent": "SVMXC__PM_Plan__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+            "parentMappedField": "SVMXC__PM_Plan__c",
+            "childObject": "SVMXC__PM_Coverage__c",
+            "unmappedFields": [   
+            ],
+            "lookups": [
+                {
+                    "lookupMappedField": "SVMXC__Product_Name__c",
+                    "lookupObject": "SVMXC__Installed_Product__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Location_Name__c",
+                    "lookupObject": "SVMXC__Site__c",
+                    "keys": [
+                      "Name"
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "parentMappedField": "SVMXC__PM_Plan__c",
+            "childObject": "SVMXC__PM_Schedule_Definition__c",
+            "unmappedFields": [   
+            ],
+            "lookups": [
+                {
+                    "lookupMappedField": "SVMXC__SM_PM_Coverage__c",
+                    "lookupObject": "SVMXC__PM_Coverage__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Work_Order_Purpose__c",
+                    "lookupObject": "SVMXC__Task_Template__c",
+                    "keys": [
+                      "Name"
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "parentMappedField": "SVMXC__PM_Plan__c",
+            "childObject": "SVMXC__PM_Schedule__c",
+            "unmappedFields": [   
+            ],
+            "lookups": [
+                {
+                    "lookupMappedField": "SVMXC__SM_PM_Coverage__c",
+                    "lookupObject": "SVMXC__PM_Coverage__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__PM_Schedule_Definition__c",
+                    "lookupObject": "SVMXC__PM_Schedule_Definition__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Work_Order_Purpose__c",
+                    "lookupObject": "SVMXC__Task_Template__c",
+                    "keys": [
+                      "Name"
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "parentMappedField": "SVMXC__PM_Plan__c",
+            "childObject": "SVMXC__PM_History__c",
+            "unmappedFields": [   
+            ],
+            "lookups": [
+                {
+                    "lookupMappedField": "SVMXC__PM_Coverage__c",
+                    "lookupObject": "SVMXC__PM_Coverage__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__PM_Schedule_Definition__c",
+                    "lookupObject": "SVMXC__PM_Schedule_Definition__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Work_Order__c",
+                    "lookupObject": "SVMXC__Service_Order__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__SM_PM_Schedule__c",
+                    "lookupObject": "SVMXC__PM_Schedule__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Installed_Product__c",
+                    "lookupObject": "SVMXC__Installed_Product__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Location__c",
+                    "lookupObject": "SVMXC__Site__c",
+                    "keys": [
+                      "Name"
+                    ]
+                }
+                
+            ]
+        }
+      ],
+      "lookups": [
+        {
+            "lookupMappedField": "SVMXC__Account__c",
+            "lookupObject": "Account",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Dispatch_Process__c",
+            "lookupObject": "SVMXC__ServiceMax_Processes__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Case_Assign_To_User__c",
+            "lookupObject": "User",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Canceled_By__c",
+            "lookupObject": "User",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Location__c",
+            "lookupObject": "SVMXC__Site__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__PM_Plan_Template__c",
+            "lookupObject": "SVMXC__PM_Plan_Template__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Service_Contract__c",
+            "lookupObject": "SVMXC__Service_Contract__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__SLA_Terms__c",
+            "lookupObject": "SVMXC__Service_Level__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Task_Template__c",
+            "lookupObject": "SVMXC__Task_Template__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Work_Order_Assign_To_User__c",
+            "lookupObject": "User",
+            "keys": [
+                "Name"
+            ]
+        }
+        ]
+    }
+  ]

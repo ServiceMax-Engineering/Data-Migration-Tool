@@ -1,0 +1,45 @@
+[
+    {
+      "parent": "SVMXC__Site__c",
+      "unmappedFields": [
+        
+      ],
+      "lookups": [
+        {
+          "lookupMappedField": "SVMXC__Preferred_Business_Hours__c",
+          "lookupObject": "BusinessHours",
+          "keys": [
+            "Name"
+          ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Account__c",
+            "lookupObject": "Account",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Parent__c",
+          "lookupObject": "SVMXC__Site__c",
+          "keys": [
+              "Name"
+          ]
+      },
+        {
+            "lookupMappedField": "SVMXC__Partner_Account__c",
+            "lookupObject": "Account",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Partner_Contact__c",
+            "lookupObject": "Contact",
+            "keys": [
+                "Name"
+            ]
+        }
+    ]
+    }
+  ]

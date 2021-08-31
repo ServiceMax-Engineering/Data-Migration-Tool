@@ -1,0 +1,17 @@
+[
+    {
+      "parent": "SVMXC__SM_IB_Attributes_Template_Instance__c",
+      "unmappedFields": [
+        
+      ],
+      "lookups": [
+        {
+            "lookupMappedField": "SVMXC__SM_Installed_Product_Id__c",
+            "lookupObject": "SVMXC__Installed_Product__c",
+            "keys": [
+                "Name"
+            ]
+        }
+        ]
+    }
+  ]

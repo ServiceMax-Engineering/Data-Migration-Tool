@@ -1,0 +1,24 @@
+[
+    {
+      "parent": "SVMXC__Service_Template__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+            "parentMappedField": "SVMXC__Service_Template__c",
+            "childObject": "SVMXC__Service_Template_Products__c",
+            "unmappedFields": [
+            
+            ]
+        },
+        {
+          "parentMappedField": "SVMXC__Warranty_Terms__c",
+          "childObject": "SVMXC__Counter_Details__c",
+          "unmappedFields": [
+              
+          ]
+      }
+      ]
+    }
+  ]

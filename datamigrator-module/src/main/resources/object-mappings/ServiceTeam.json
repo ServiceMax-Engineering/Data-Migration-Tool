@@ -1,0 +1,144 @@
+[
+    {
+      "parent": "SVMXC__Service_Group__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+          "parentMappedField": "SVMXC__Service_Group__c",
+          "childObject": "SVMXC__Service_Group_Members__c",
+          "unmappedFields": [
+          
+          ],
+          "lookups": [
+              {
+                "lookupMappedField": "SVMXC__Working_Hours__c",
+                "lookupObject": "BusinessHours",
+                "keys": [
+                  "Name"
+                ]
+              },
+              {
+                "lookupMappedField": "SVMXC__Break_Hours__c",
+                "lookupObject": "BusinessHours",
+                "keys": [
+                  "Name"
+                ]
+              },
+              {
+                "lookupMappedField": "SVMXC__Inventory_Location__c",
+                "lookupObject": "SVMXC__Site__c",
+                "keys": [
+                  "Name"
+                ]
+              },
+              {
+                "lookupMappedField": "SVMXC__Overtime_Hours__c",
+                "lookupObject": "BusinessHours",
+                "keys": [
+                  "Name"
+                ]
+              },
+              {
+                "lookupMappedField": "SVMXC__Service_Territory__c",
+                "lookupObject": "SVMXC__Territory__c",
+                "keys": [
+                  "Name"
+                ]
+              }
+          ]
+        },
+        {
+            "parentMappedField": "SVMXC__Service_Group__c",
+            "childObject": "SVMXC__Service_Group_Skills__c",
+            "unmappedFields": [
+            
+            ],
+            "lookups": [
+                {
+                  "lookupMappedField": "SVMXC__Skill__c",
+                  "lookupObject": "SVMXC__Skill__c",
+                  "keys": [
+                    "Name"
+                  ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Group_Member__c",
+                    "lookupObject": "SVMXC__Service_Group_Members__c",
+                    "keys": [
+                      "Name"
+                    ]
+                  }
+            ]
+        },
+        {
+            "parentMappedField": "SVMXC__Service_Group__c",
+            "childObject": "SVMXC__Service_Group_Site__c",
+            "unmappedFields": [
+                
+            ],
+            "lookups": [
+                {
+                  "lookupMappedField": "SVMXC__Site__c",
+                  "lookupObject": "SVMXC__Site__c",
+                  "keys": [
+                    "Name"
+                  ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Technician_Equipment__c",
+                    "lookupObject": "SVMXC__Service_Group_Members__c",
+                    "keys": [
+                        "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Break_Hours__c",
+                    "lookupObject": "BusinessHours",
+                    "keys": [
+                        "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Overtime_Hours__c",
+                    "lookupObject": "BusinessHours",
+                    "keys": [
+                        "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Working_Hours__c",
+                    "lookupObject": "BusinessHours",
+                    "keys": [
+                        "Name"
+                    ]
+                }
+            ]
+        },
+        {
+          "parentMappedField": "SVMXC__Service_Group__c",
+          "childObject": "SVMXC__Service_Group_Product__c",
+          "unmappedFields": [
+              
+          ],
+          "lookups": [
+            {
+              "lookupMappedField": "SVMXC__Product__c",
+              "lookupObject": "Product2",
+              "keys": [
+                "Name"
+              ]
+            },
+            {
+                "lookupMappedField": "SVMXC__Group_Member__c",
+                "lookupObject": "SVMXC__Service_Group_Members__c",
+                "keys": [
+                  "Name"
+                ]
+              }
+        ]
+        }
+      ]
+    }
+  ]

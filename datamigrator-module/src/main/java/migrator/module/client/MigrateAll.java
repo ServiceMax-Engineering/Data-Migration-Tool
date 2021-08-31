@@ -1,33 +1,3 @@
-/*
- * Copyright (c) 2018, Salesforce.com, Inc.
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * 1. Redistributions of source code must retain the above copyright notice,
- * this list of conditions and the following disclaimer.
- *
- * 2. Redistributions in binary form must reproduce the above copyright notice,
- * this list of conditions and the following disclaimer in the documentation
- * and/or other materials provided with the distribution.
- *
- * 3. Neither the name of Salesforce.com nor the names of its contributors may
- * be used to endorse or promote products derived from this software without
- * specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
- * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
- * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
- * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
- * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
- * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
- * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
- * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
- * POSSIBILITY OF SUCH DAMAGE.
- */
 package migrator.module.client;
 
 import java.util.ArrayList;
@@ -36,27 +6,52 @@ import java.util.List;
 import migrator.core.sobject.MigrableObjectFactory;
 import migrator.core.utils.CommandVO;
 
-/**
- * Main class to kick-off migrations
- *
- * @author anoop.singh
- */
-public class MigrateAll {
-
+public class TestMain {
 	public void process() {
 
 	   List<CommandVO> list = new ArrayList<CommandVO>();
 
+	   list.add(new CommandVO("create", "Account.json"));
+	   list.add(new CommandVO("create", "AvailableService.json"));
+	   list.add(new CommandVO("create", "Contact.json"));
+	   list.add(new CommandVO("create", "BusinessHours.json"));
+	   list.add(new CommandVO("create", "Territory.json"));
+	   list.add(new CommandVO("create", "Location.json"));
+	   list.add(new CommandVO("create", "Currency.json"));
+
 	   list.add(new CommandVO("create", "Products.json"));
-	   list.add(new CommandVO("create", "PricebookEntry_standard.json"));
-	   list.add(new CommandVO("create", "PricebookEntry_nonstandard.json"));
-	   list.add(new CommandVO("create", "AccountwithAssetsAndOppties.json"));
+	   list.add(new CommandVO("create", "ActivityMaster.json"));
+	   list.add(new CommandVO("create", "ServicePricebook.json"));
+	   list.add(new CommandVO("create", "StockHistory.json"));
+	   list.add(new CommandVO("create", "StockTransfer.json"));
+
+	   list.add(new CommandVO("create", "SLATerms.json"));
+	   list.add(new CommandVO("create", "ServiceContract.json"));
+	   list.add(new CommandVO("create", "ServicePlan.json"));
+	   list.add(new CommandVO("create", "WarrantyTerms.json"));
+	   list.add(new CommandVO("create", "ServiceTeam.json"));
+       
+	   list.add(new CommandVO("create", "ProductIQTemplate.json"));
+	   list.add(new CommandVO("create", "InstalledProduct.json"));
+	   list.add(new CommandVO("create", "AttributesTemplate.json"));
+	   list.add(new CommandVO("create", "AttrTemplateInstance.json"));
+	   list.add(new CommandVO("create", "AttributesHistory.json"));
+	   list.add(new CommandVO("create", "ProductAttributes.json"));
+
+	   list.add(new CommandVO("create", "TaskTemplate.json"));
+	   list.add(new CommandVO("create", "PMPlanTemplate.json"));
+	   list.add(new CommandVO("create", "PMPlan.json"));
+
+	   list1.add(new CommandVO("create", "Case.json"));
+	   list1.add(new CommandVO("create", "WorkOrder.json"));
+	   list1.add(new CommandVO("create", "PartsRequest.json"));
+	   list1.add(new CommandVO("create", "PartsOrder.json"));
 
 	   MigrableObjectFactory.migrate(list);
 	}
 
    	static public void main(String[] args) {
-   		MigrateAll migrate = new MigrateAll();
+   		TestMain migrate = new TestMain();
    		migrate.process();
 	}
 }

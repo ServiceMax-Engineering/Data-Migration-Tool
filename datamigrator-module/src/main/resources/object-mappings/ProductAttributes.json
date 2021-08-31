@@ -1,0 +1,24 @@
+[
+    {
+      "parent": "SVMXC__SM_Product_Attributes__c",
+      "unmappedFields": [
+        
+      ],
+      "lookups": [
+        {
+            "lookupMappedField": "SVMXC__SM_Attribute_Template_Id__c",
+            "lookupObject": "SVMXC__SM_Attributes_Template__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__SM_Product__c",
+            "lookupObject": "Product2",
+            "keys": [
+                "Name"
+            ]
+        }
+        ]
+    }
+  ]

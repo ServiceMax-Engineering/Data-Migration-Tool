@@ -1,0 +1,42 @@
+[
+    {
+      "parent": "SVMXC__Service_Plan__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+            "parentMappedField": "SVMXC__Service_Plan__c",
+            "childObject": "SVMXC__Service_Offerings__c",
+            "unmappedFields": [
+            
+            ],
+            "lookups": [
+                {
+                    "lookupMappedField": "SVMXC__Available_Services__c",
+                    "lookupObject": "SVMXC__Service__c",
+                    "keys": [
+                        "Name"
+                    ]
+                }
+            ]
+        }
+      ],
+      "lookups": [
+        {
+            "lookupMappedField": "SVMXC__SLA_Terms__c",
+            "lookupObject": "SVMXC__Service_Level__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Service_Pricebook__c",
+            "lookupObject": "SVMXC__Service_Pricebook__c",
+            "keys": [
+                "Name"
+            ]
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,157 @@
+[
+    {
+      "parent": "SVMXC__Stock_History__c",
+      "unmappedFields": [
+      ],
+      "lookups": [
+        {
+          "lookupMappedField": "SVMXC__SM_Batch_Lot2__c",
+          "lookupObject": "SVMXC__SM_Batch_Lot__c",
+          "keys": [
+            "Name"
+          ]
+        },
+        {
+            "lookupMappedField": "SVMXC__From_Product_Stock__c",
+            "lookupObject": "SVMXC__Product_Stock__c",
+            "keys": [
+              "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Inventory_Process__c",
+            "lookupObject": "SVMXC__ServiceMax_Processes__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Location__c",
+            "lookupObject": "SVMXC__Site__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Partner_Account__c",
+            "lookupObject": "Account",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Partner_Contact__c",
+            "lookupObject": "Contact",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Parts_Request__c",
+            "lookupObject": "SVMXC__Parts_Request__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Parts_Request_Line__c",
+            "lookupObject": "SVMXC__Parts_Request_Line__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Product__c",
+            "lookupObject": "Product2",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Product_Serial__c",
+            "lookupObject": "SVMXC__Product_Serial__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Product_Stock__c",
+            "lookupObject": "SVMXC__Product_Stock__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__RMA__c",
+            "lookupObject": "SVMXC__RMA_Shipment_Order__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__RMA_Line__c",
+            "lookupObject": "SVMXC__RMA_Shipment_Line__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Shipment__c",
+            "lookupObject": "SVMXC__RMA_Shipment_Order__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Shipment_Line__c",
+            "lookupObject": "SVMXC__RMA_Shipment_Line__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Stock_Adjustment__c",
+            "lookupObject": "SVMXC__Stock_Adjustment__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Stock_Transfer__c",
+            "lookupObject": "SVMXC__Stock_Transfer__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Stock_Transfer_Line__c",
+            "lookupObject": "SVMXC__RMA_Shipment_Line__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__To_Product_Stock__c",
+            "lookupObject": "SVMXC__Product_Stock__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Service_Order_Line__c",
+            "lookupObject": "SVMXC__Service_Order_Line__c",
+            "keys": [
+              "Name"
+            ]
+          },
+          {
+            "lookupMappedField": "SVMXC__Service_Order__c",
+            "lookupObject": "SVMXC__Service_Order__c",
+            "keys": [
+              "Name"
+            ]
+          }
+        
+      ]
+    }
+  ]

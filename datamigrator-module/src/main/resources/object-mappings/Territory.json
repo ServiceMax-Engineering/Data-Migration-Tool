@@ -1,0 +1,39 @@
+[{
+    "parent": "SVMXC__Territory__c",
+    "unmappedFields": [
+        
+    ],
+    "children": [
+      {
+          "parentMappedField": "SVMXC__Territory__c",
+          "childObject": "SVMXC__Service_Zone__c",
+          "unmappedFields": [
+          
+          ]
+      },
+      {
+        "parentMappedField": "SVMXC__Territory__c",
+        "childObject": "SVMXC__Territory_Coverage__c",
+        "unmappedFields": [
+        
+        ],
+        "lookups": [{
+          "lookupMappedField": "SVMXC__Adjacent_Territory__c",
+          "lookupObject": "SVMXC__Territory__c",
+          "keys": [
+            "Name"
+          ]
+        }
+      ]
+    }
+    ],
+    "lookups": [
+        {
+            "lookupMappedField": "SVMXC__Parent_Territory__c",
+            "lookupObject": "SVMXC__Territory__c",
+            "keys": [
+              "Name"
+            ]
+          }
+    ]
+}]

@@ -1,0 +1,286 @@
+[
+    {
+      "parent": "SVMXC__Service_Order__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+            "parentMappedField": "SVMXC__Service_Order__c",
+            "childObject": "SVMXC__Down_Time__c",
+            "unmappedFields": [
+            
+            ]
+        },
+        {
+          "parentMappedField": "SVMXC__Service_Order__c",
+          "childObject": "SVMXC__Service_Order_Line__c",
+          "lookups": [
+            {
+              "lookupMappedField": "SVMXC__SM_Batch_Lot2__c",
+              "lookupObject": "SVMXC__SM_Batch_Lot__c",
+              "keys": [
+                "Name"
+              ]
+            },
+            {
+                "lookupMappedField": "SVMXC__Closed_By__c",
+                "lookupObject": "User",
+                "keys": [
+                    "Name"
+                ]
+            },
+            {
+                "lookupMappedField": "SVMXC__From_Location__c",
+                "lookupObject": "SVMXC__Site__c",
+                "keys": [
+                    "Name"
+                ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Serial_Number__c",
+              "lookupObject": "SVMXC__Installed_Product__c",
+              "keys": [
+                  "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Product__c",
+              "lookupObject": "Product2",
+              "keys": [
+                  "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Product_Warranty__c",
+              "lookupObject": "SVMXC__Warranty__c",
+              "keys": [
+                  "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Service_Maintenance_Contract__c",
+              "lookupObject": "SVMXC__Service_Contract__c",
+              "keys": [
+                  "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Service_Group__c",
+              "lookupObject": "SVMXC__Service_Group__c",
+              "keys": [
+                  "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Group_Member__c",
+              "lookupObject": "SVMXC__Service_Group_Members__c",
+              "keys": [
+                  "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Requested_Location__c",
+              "lookupObject": "SVMXC__Site__c",
+              "keys": [
+                  "Name"
+              ]
+            },
+            {
+              "lookupMappedField": "SVMXC__Work_Detail__c",
+              "lookupObject": "SVMXC__Service_Order_Line__c",
+              "keys": [
+                  "Name"
+              ]
+            }
+          ]
+        },
+        {
+          "parentMappedField": "SVMXC__Primary_Work_Order__c",
+          "childObject": "SVMXC__Service_Order_Dependency__c",
+          "unmappedFields": [
+          
+          ]
+        },
+        {
+          "parentMappedField": "SVMXC__Work_Order__c",
+          "childObject": "SVMXC__Work_Order_Resource__c",
+          "unmappedFields": [
+          
+          ],
+          "lookups": [
+            {
+              "lookupMappedField": "SVMXC__Group_Member__c",
+              "lookupObject": "SVMXC__Service_Group_Members__c",
+              "keys": [
+                "Name"
+              ]
+            }
+          ]  
+        }
+      ],
+      "lookups": [
+        {
+          "lookupMappedField": "SVMXC__Company__c",
+          "lookupObject": "Account",
+          "keys": [
+            "Name"
+          ]
+        },
+        {
+            "lookupMappedField": "SVMXC__SM_Appointment_Type__c",
+            "lookupObject": "SVMXC__SM_Appointment_Window__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Case__c",
+            "lookupObject": "Case",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Closed_By__c",
+          "lookupObject": "User",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Component__c",
+          "lookupObject": "SVMXC__Installed_Product__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Contact__c",
+          "lookupObject": "Contact",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Dispatch_Process__c",
+          "lookupObject": "SVMXC__ServiceMax_Processes__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Master_Order_Line__c",
+          "lookupObject": "SVMXC__RMA_Shipment_Line__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Preferred_Business_Hours__c",
+          "lookupObject": "BusinessHours",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Preferred_Technician__c",
+          "lookupObject": "SVMXC__Service_Group_Members__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__PM_Plan__c",
+          "lookupObject": "SVMXC__PM_Plan__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Primary_Territory__c",
+          "lookupObject": "SVMXC__Territory__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Related_Work_Order__c",
+          "lookupObject": "SVMXC__Service_Order__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Product__c",
+          "lookupObject": "Product2",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Service_Contract__c",
+          "lookupObject": "SVMXC__Service_Contract__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__SM_Service_Request__c",
+          "lookupObject": "SVMXC__Service_Request__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Service_Group__c",
+          "lookupObject": "SVMXC__Service_Group__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Site__c",
+          "lookupObject": "SVMXC__Site__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Skill__c",
+          "lookupObject": "SVMXC__Skill__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__SLA_Terms__c",
+          "lookupObject": "SVMXC__Service_Level__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Group_Member__c",
+          "lookupObject": "SVMXC__Service_Group_Members__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Top_Level__c",
+          "lookupObject": "SVMXC__Installed_Product__c",
+          "keys": [
+              "Name"
+          ]
+        },
+        {
+          "lookupMappedField": "SVMXC__Warranty__c",
+          "lookupObject": "SVMXC__Warranty__c",
+          "keys": [
+              "Name"
+          ]
+        }
+      ]
+    }
+  ]

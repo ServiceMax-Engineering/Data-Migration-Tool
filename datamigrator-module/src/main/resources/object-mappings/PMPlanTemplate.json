@@ -1,0 +1,65 @@
+[
+    {
+      "parent": "SVMXC__PM_Plan_Template__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+            "parentMappedField": "SVMXC__PM_Plan_Template__c",
+            "childObject": "SVMXC__PM_Schedule_Template__c",
+            "unmappedFields": [   
+            ],
+            "lookups": [
+                {
+                    "lookupMappedField": "SVMXC__Work_Order_Purpose__c",
+                    "lookupObject": "SVMXC__Task_Template__c",
+                    "keys": [
+                      "Name"
+                    ]
+                }
+                
+            ]
+        },
+        {
+            "parentMappedField": "SVMXC__PM_Plan_Template__c",
+            "childObject": "SVMXC__PM_Applicable_Product__c",
+            "unmappedFields": [   
+            ],
+            "lookups": [
+                {
+                    "lookupMappedField": "SVMXC__Product__c",
+                    "lookupObject": "Product2",
+                    "keys": [
+                      "Name"
+                    ]
+                }
+                
+            ]
+        }
+      ],
+      "lookups": [
+        {
+            "lookupMappedField": "SVMXC__IB_Criteria__c",
+            "lookupObject": "SVMXC__ServiceMax_Processes__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__Location_Criteria__c",
+            "lookupObject": "SVMXC__ServiceMax_Processes__c",
+            "keys": [
+                "Name"
+            ]
+        },
+        {
+            "lookupMappedField": "SVMXC__SM_Work_Order_Purpose__c",
+            "lookupObject": "SVMXC__Task_Template__c",
+            "keys": [
+                "Name"
+            ]
+        }
+        ]
+    }
+  ]

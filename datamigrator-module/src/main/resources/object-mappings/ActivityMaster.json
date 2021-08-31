@@ -1,0 +1,26 @@
+[
+    {
+      "parent": "SVMXC__Activity_Master__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+          "parentMappedField": "SVMXC__Activity__c",
+          "childObject": "SVMXC__Activity_Product__c",
+          "unmappedFields": [
+           
+          ],
+          "lookups": [
+            {
+              "lookupMappedField": "SVMXC__Product__c",
+              "lookupObject": "Product2",
+              "keys": [
+                "Name"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]

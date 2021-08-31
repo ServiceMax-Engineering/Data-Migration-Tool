@@ -1,0 +1,16 @@
+[{
+    "parent": "SVMXC__Service__c",
+    "unmappedFields": [
+        
+    ],
+    "lookups": [
+        {
+            "lookupMappedField": "SVMXC__Qualifying_Criteria__c",
+            "lookupObject": "SVMXC__ServiceMax_Processes__c",
+            "keys": [
+              "Name"
+            ]
+          }
+    ]
+}]
+

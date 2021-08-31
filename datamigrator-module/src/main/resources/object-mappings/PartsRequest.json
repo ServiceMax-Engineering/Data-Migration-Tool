@@ -1,0 +1,98 @@
+[
+    {
+      "parent": "SVMXC__Parts_Request__c",
+      "unmappedFields": [
+        
+      ],
+      "children": [
+        {
+            "parentMappedField": "SVMXC__Parts_Request__c",
+            "childObject": "SVMXC__Parts_Request_Line__c",
+            "unmappedFields": [   
+            ],
+            "lookups": [
+                {
+                    "lookupMappedField": "SVMXC__SM_Batch_Lot2__c",
+                    "lookupObject": "SVMXC__SM_Batch_Lot__c",
+                    "keys": [
+                      "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Product__c",
+                    "lookupObject": "Product2",
+                    "keys": [
+                        "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Closed_By__c",
+                    "lookupObject": "User",
+                    "keys": [
+                        "Name"
+                    ]
+                },
+                {
+                    "lookupMappedField": "SVMXC__Canceled_By__c",
+                    "lookupObject": "User",
+                    "keys": [
+                        "Name"
+                    ]
+                }
+                
+            ]
+        }
+      ],
+      "lookups": [
+            {
+                "lookupMappedField": "SVMXC__Partner_Account__c",
+                "lookupObject": "Account",
+                "keys": [
+                    "Name"
+                ]
+            },
+            {
+                "lookupMappedField": "SVMXC__Canceled_By__c",
+                "lookupObject": "user",
+                "keys": [
+                    "Name"
+                ]
+            },
+            {
+                "lookupMappedField": "SVMXC__Closed_By__c",
+                "lookupObject": "user",
+                "keys": [
+                    "Name"
+                ]
+            },
+            {
+                "lookupMappedField": "SVMXC__Partner_Contact__c",
+                "lookupObject": "Contact",
+                "keys": [
+                    "Name"
+                ]
+            },
+            {
+                "lookupMappedField": "SVMXC__Requested_From__c",
+                "lookupObject": "SVMXC__Site__c",
+                "keys": [
+                    "Name"
+                ]
+            },
+            {
+                "lookupMappedField": "SVMXC__Required_At_Location__c",
+                "lookupObject": "SVMXC__Site__c",
+                "keys": [
+                    "Name"
+                ]
+            },
+            {
+                "lookupMappedField": "SVMXC__Company__c",
+                "lookupObject": "Account",
+                "keys": [
+                    "Name"
+                ]
+            }
+        ]
+    }
+  ]

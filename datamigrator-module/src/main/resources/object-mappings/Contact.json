@@ -1,0 +1,15 @@
+[{
+    "parent": "Contact",
+    "unmappedFields": [
+      "CleanStatus"
+    ],
+    "lookups": [
+      {
+        "lookupMappedField": "AccountId",
+        "lookupObject": "Account",
+        "keys": [
+          "Email"
+        ]
+      }
+    ]
+}]
